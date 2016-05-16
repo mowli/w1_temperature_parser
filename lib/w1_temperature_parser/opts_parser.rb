@@ -13,7 +13,6 @@ module W1TemperatureParser
 
         opts.on('-h', '--help', 'Prints this help') do
           puts opts
-          exit
         end
       end
 

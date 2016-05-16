@@ -1,4 +1,3 @@
 #!/usr/bin/env ruby
 require 'w1_temperature_parser'
-
-W1TemperatureParser::CLI.new.start
+W1TemperatureParser::CLI.new(ARGV).start

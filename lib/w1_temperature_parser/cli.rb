@@ -1,6 +1,12 @@
 class W1TemperatureParser::CLI
+  attr_reader :params
+
+  def initialize(params)
+    @params = params
+  end
+
   def start
-    options = W1TemperatureParser::OptsParser.parse ARGV
+    options = W1TemperatureParser::OptsParser.parse params
 
     input_file = options.input_file
     if !input_file.nil?

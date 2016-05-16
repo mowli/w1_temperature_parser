@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'w1_temperature_parser'
 
 describe W1TemperatureParser::Parser do
   subject { described_class.new(input_file) }
