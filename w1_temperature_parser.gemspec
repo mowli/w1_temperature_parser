@@ -9,10 +9,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Oliver Noack']
   spec.email         = ["oliver.noack@zweitag.de"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-  spec.license       = "MIT"
+  spec.summary       = 'Parse DS18B20 data'
+  spec.description   = 'Some utils to ease handling of DS18B20 temperature data'
+  spec.homepage      = 'https://github.com/mowli'
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "bin"
