@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "bin"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.executables   = ['parse_temperature']
   spec.require_paths = ['parse_temperature']
 
   spec.add_development_dependency 'bundler', '~> 1.10'
