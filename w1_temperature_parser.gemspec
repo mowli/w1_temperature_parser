@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Parse DS18B20 data'
   spec.description   = 'Some utils to ease handling of DS18B20 temperature data'
-  spec.homepage      = 'https://github.com/mowli'
+  spec.homepage      = 'https://github.com/mowli/w1_temperature_parser'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
