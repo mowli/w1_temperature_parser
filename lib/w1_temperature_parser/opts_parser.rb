@@ -11,9 +11,14 @@ module W1TemperatureParser
           result.input_file = n
         end
 
+        opts.on('-uUNIT', '--unitUNIT', 'Choose unit of output (standard celsius)') do |n|
+          result.unit = n
+        end
+
         opts.on('-h', '--help', 'Prints this help') do
           puts opts
         end
+
       end
 
       opt_parser.parse!(options)
@@ -21,6 +26,6 @@ module W1TemperatureParser
     end
   end
 
-  class Options < Struct.new(:input_file)
+  class Options < Struct.new(:input_file, :unit)
   end
 end

@@ -1,6 +1,6 @@
 # W1TemperatureParser
 
-Some utils to ease parsing results of DS18B20 temperature sensor. Retries a defined amount of times, if the sensor returns non-temperature values like 85000 (initial state) and 127687 (signed int - wrong communication)
+Some utils to ease parsing results of DS18B20 temperature sensor in use on the GPIO of the Raspberry PI. Retries a defined amount of times, if the sensor returns non-temperature values like 85000 (initial state) and 127687 (signed int - wrong communication). Also revert the result to fahrenheit.
 
 ## Installation
 
@@ -23,6 +23,13 @@ Or install it yourself as:
 Just call the binary with the sensor virtual file:
 ```
 parse_temperature -i  /sys/bus/w1/devices/w1_bus_master1/10-[replace-with-correct-id]/w1_slave
+22.762
+```
+
+Result in fahrenheit
+```
+parse_temperature -u F -i  /sys/bus/w1/devices/w1_bus_master1/10-[replace-with-correct-id]/w1_slave
+73.762
 ```
 
 ## Development
