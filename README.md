@@ -32,6 +32,14 @@ parse_temperature -u F -i  /sys/bus/w1/devices/w1_bus_master1/10-[replace-with-c
 73.762
 ```
 
+Help dialog
+```
+Usage: parse_temperature.rb [options]
+    -i, --input=INPUT_FILE           input file
+    -u, --unit=UNIT                  Unit of output, c/C - Celsius, f/F - Fahrenheit, k/K - Kelvin (standard celsius)
+    -h, --help                       Prints this help
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

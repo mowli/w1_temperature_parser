@@ -11,7 +11,7 @@ module W1TemperatureParser
           result.input_file = n
         end
 
-        opts.on('-uUNIT', '--unitUNIT', 'Choose unit of output (standard celsius)') do |n|
+        opts.on('-uUNIT', '--unit=UNIT', 'Unit of output, c/C - Celsius, f/F - Fahrenheit, k/K - Kelvin (standard celsius)') do |n|
           result.unit = n
         end
 
